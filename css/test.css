@@ -1,0 +1,565 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* default style for entire page */
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*background-color: #cc0000;  test colour */
+    background-color: var(--mainBackgroud);
+    font-size: 18px;
+}
+
+
+/****** START HOME GRID ******/
+main {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "contentBannerA contentBannerA"
+        "contentBannerB contentBannerB"
+        "introText introText"
+        "footer footer";
+    /* background-color: #CC0000; test colour for troubleshooting */
+}
+
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    padding: 20px;
+    /* same padding as .header and primaryNavHeader */
+}
+
+.logo {
+    padding: 20px; 
+    /* same padding as .header and primaryNavHeader */
+}
+
+.primaryNavHeader {
+    background-color :#ffffff;
+    text-align: right;
+    padding: 20px;
+    flex-flow: row wrap;
+    /* same padding as .header and primaryNavHeader */
+}
+
+.contentBannerA {
+    grid-area: contentBannerA;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.contentBannerB {
+    grid-area: contentBannerB;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+/* Banners Grid Area  */
+.contentBanner1 {
+    background-color: var(--portfolio1Bg);
+    display: flex;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 1fr;
+    padding: 20px;
+}
+
+.contentBanner2 {
+    background-color: var(--portfolio2Bg);
+    display: flex;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 1fr;
+    padding: 20px;
+}
+.contentBanner3 {
+    background-color: var(--portfolio3Bg);
+    display: flex;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 1fr;
+    padding: 20px;
+}
+.contentBanner4 {
+    background-color: var(--portfolio4Bg);
+    display: flex;
+    flex-wrap: row;
+    flex-direction: nowrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    height: 1fr;
+    padding: 20px;
+}
+
+
+/* Intro Text Grid Areas */
+.introText {
+    grid-area: introText;
+    color: var(--mainFontColor);
+    background-color: var(--mainBackgroud);
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Footer Grid Areas  */
+/* .copyright {
+    background-color: var(--mainBackgroud);
+    padding: 15px;
+} */
+
+footer {
+    display: flex;
+    background-color: var(--mainBackground);
+    font-size: 14px;
+    padding: 15px;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+/* 
+.footerLinks {
+    background-color: var(--mainBackground);
+    justify-self: end;
+    padding: 15px;
+} */
+/* END HOME GRID */
+
+
+/****** START SECONDARY PAGES GRID ******/
+main.secondary {
+    /* background-color: yellow; TEST BACKGROUND*/
+    grid-template-rows: 150px 300px auto 50px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas: 
+        "logo2 header2 primaryNavHeader2"
+        "contentBannerSecondary contentBannerSecondary contentBannerSecondary"
+        "bodyTextSecondary bodyTextSecondary bodyTextSecondary"
+        "copyright2 footer2 footerLinks2";  
+    justify-content: space-evenly;
+    align-content: start;
+} 
+
+/*** Secondary Grid Areas. 3 columns x 5 rows (see grid-template-areas above) ***/
+/* Secondary Header Grid Area */
+.logo2 {
+    grid-area: logo2;
+    /* background-color: plum; TEST Colour */
+    padding: 20px; 
+    /* same padding as .header and primaryNavHeader */
+}
+
+.header2 {
+    grid-area: header2;
+    /* background-color: seagreen;TEST Colour */
+    padding: 20px;
+    /* same padding as .header and primaryNavHeader */
+}
+
+.primaryNavHeader2 {
+    grid-area: primaryNavHeader2;
+    /* background-color : coral;TEST Colour */
+    text-align: right;
+    padding: 20px;
+    /* same padding as .header and primaryNavHeader */
+}
+
+
+/* Secondary Banner Grid Area */
+.contentBannerSecondary {
+    grid-area: contentBannerSecondary;
+    padding: 50px;
+    background-color: var(--portfolio1Bg);
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Number Line Area */
+.numberLine {
+    grid-area: numberLine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Secondary Body Text Area */
+.bodyTextSecondary {
+    grid-area: bodyTextSecondary;
+    /* background-color: purple; TEST COLOUR */
+}
+
+/* Secondary Footer Grid Areas (3) */
+.copyright2 {
+    grid-area: copyright2;
+    background-color: var(--mainBackgroud);
+    font-size: 14px;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.footer2 {
+    grid-area: footer2;
+    background-color: var(--mainBackground);
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.footerLinks2 {
+    grid-area: footerLinks2;
+    background-color: var(--mainBackground);
+    justify-self: end;
+    padding: 15px;
+    padding-top: 30px;
+}
+/* END SECONDARY PAGES GRID */
+
+/* formatting primary Navigation links */
+a.primaryNav:link {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 100px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 30px;
+}
+
+a.primaryNav:visited {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 100px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 30px;
+}
+
+a.primaryNav:hover {
+    color: var(--logoBlue);
+    text-decoration: underline;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 100px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 30px;
+}
+
+a.primaryNav:active {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 100px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 30px;
+}
+
+/* for ON pages */
+a.primaryNavOn:link {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 100px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 30px;
+}
+a.primaryNavOn:visited {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 100px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 30px;
+}
+
+a.primaryNavOn:hover {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 100px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 30px;
+}
+
+a.primaryNavOn:active {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    word-spacing: 100px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 30px;
+}
+
+
+/* formatting email links */
+a.email:link {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: noraml;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+a.email:visited {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+a.email:hover {
+    color: var(--logoBlue);
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+a.email:active {
+    color: var(--mainFontColor);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+/* Content Banner Divs */
+.contentBannerText {
+    color: var(--mainFontColor);
+    text-align: left;
+    padding: 20px;
+}
+
+
+/* formatting regular text and links */
+p {
+    line-height: 1.25;
+}
+
+h1.homepage{
+    color: var(--mainFontColor); 
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.circleOff {
+    width: 35px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    border: 3px solid var(--logoBlue);
+    font-family: Verdana;
+  }
+
+  .circleOn {
+    width: 35px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid var(--logoBlue);
+    font-family: Verdana;
+    background-color: var(--portfolio1Bg);
+  }
+
+  hr.circleNumberLine {
+    border-top: 3px solid var(--logoBlue);
+    width: 40px;
+  }
+
+  .bodyTextA {
+    padding: 20px;
+
+  }
+
+  .bodyTextB {
+    background-color: var(--portfolio1Bg);
+    padding: 20px;
+  }
+
+  h2.subtitle {
+      font-weight: bold;
+      color: var(--logoBlue);
+
+  }
+
+  .flexContainerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .flexContainerBody {
+    /* display: flex;
+    justify-content: left;
+    align-items: flex-start; */
+    padding: 20px;
+    /* background-color: coral; TEST COLOUR */
+  }
+
+  .flexContainerBodyResume {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start; 
+    padding: 20px;
+    /* background-color: coral; TEST COLOUR  */
+  }
+
+ div .resume {
+    flex-grow:1;
+    flex-wrap: wrap;
+  }
+
+  .flexContainerFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+
+  /* media queries go at end off css */
+  @media only screen and (max-width: 600px) {
+    body {
+      /* background-color: lightblue;
+      this colour is for testing only */
+    }
+    header {
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        padding: 20px;
+        /* same padding as .header and primaryNavHeader */
+    }
+
+    .contentBannerA {
+        grid-area: contentBannerA;
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contentBannerB {
+        grid-area: contentBannerB;
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .introText {
+        grid-area: introText;
+        display: flex;
+        padding: 20px;
+        color: var(--mainFontColor);
+        background-color: var(--mainBackgroud);
+        width: 70%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    footer {
+        display: flex;
+        background-color: var(--mainBackground);
+        font-size: 14px;
+        padding: 15px;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+
+    }

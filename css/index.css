@@ -1,49 +1,83 @@
-.container {
-    max-width: 960px;
-  }
-  
-  .pricing-header {
-    max-width: 700px;
-  }
 
-.head {
-    padding-top: 20px;
-    padding-bottom: 20px;
+/* colour variables */
+:root {
+    --mainBackground: #ffffff;
+    --mainFontColor: #434343;
 }
 
-.shopName {
-    text-align: left;
-    color: coral;
-}  
-
-h4 {
-    color:coral;
-    font-weight: bold;
+* {
+    /*box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #cc0000;  test colour */
+    background-color: var(--mainBackgroud);
+    font-size: 18px;
 }
 
-.card-puzzle {
-    background-image: url('../images/debby-hudson-tDaeJbTRwxQ-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-    /* color: coral; test colour */
-    min-height: 350px;
+main {
+    width: 100%;
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    background-color: pink; /* for testing */
+    outline: solid 1px blue; /* for testing */
+    padding-top: 40px;
 }
 
-.card-family {
-    background-image: url('../images/national-cancer-institute-VJVsEnR_vNE-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-    /* color: coral; test colour */
-    min-height: 350px;
+.logoUtilityBarContainer {
+    width: 90%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: burlywood; /* test colour */
 }
 
-.card-tricks {
-    background-image: url('../images/jose-aljovin-ZR_YT4Kp5Ik-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-    /* color: coral; test colour */
-    min-height: 350px;
+.primaryNavBarContainer {
+    width: 100%;
+    background-color: chartreuse; /* test colour */
+    width: 90%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bannerBarContainer {
+    width: 100%;
+    background-color: darkgreen; /* test colour */
+}
+
+.statusBarContainer {
+    width: 100%;
+    background-color: goldenrod; /* test colour */
+}
+
+.mainGrid {
+    outline: solid 1px tomato; /* for testing */
+    background-color: yellow; /* for testing */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(12, 1);
+    gap: 20px;
+    /* grid-area: TBD; */
+}
+
+.mainGrid img{
+    max-width: 100%;
+}
+
+.topFooterContainer {
+    width: 100%;
+    background-color: purple; /* test colour */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.bottomFooterContainer {
+    width: 100%;
+    background-color: khaki; /* test colour */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
