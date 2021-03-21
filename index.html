@@ -4,9 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Homepage Stylesheet -->
     <link href="css/index.css" rel="stylesheet">
     <!-- Font Link: Open Sans-->
@@ -14,33 +13,168 @@
     <title>Toronto Covid Hub</title>
   </head>
   <body>
-  <main>
-    <!-- 40px padding-top for Main in CSS -->
-    <!-- Row: Logo & Utility Bar-->
-    <div class="logoUtilityBarContainer">
-      <!-- Logo -->
-      <div><img src="images/logo.png" alt="Toronto Covid Hub"></div>
-      <!-- container for Utility Nav & Search Bar-->
-      <div>
-        <div class="utilityNavSection"><a href="#" class="utilityNav">AA+</a><a href="#" class="utilityNav">FAQs</a><a href="#" class="utilityNav">Language</a><div class="spacer1"></div><input type="text" class="search" placeholder="Search.."></div>
+  <!-- 40px padding-top for Main in CSS -->
+  <!-- IMG set to max-width 100% max-heigh 100% -->
+  <header class="logoUtilityBarContainer">
+    <!-- Logo & Utility Bar-->
+    <!-- Logo --><div><img src="images/logo.png" alt="Toronto Covid Hub"></div>
+    <!-- Container for Utility Nav & Search Bar--><div class="utilityNavSection"><a href="#" class="utilityNav">AA+</a><a href="#" class="utilityNav">FAQs</a><a href="#" class="utilityNav">Language</a><div class="spacer1"><!-- Spacer --><div class="spacer1"></div>
+    <!-- Search Bar -->
+    <div>
+    <form class="search">
+      <input type="text" name="search" placeholder="Search..">
+    </form><!-- Spacer -->
+      <!-- QA: want to use submit button? <div class="spacer1"></div><input type="search" value="Search">--></div>
+  </header>
+    <!-- Row: Primary Navigation Bar-->
+    <nav class="primaryNavBarContainer">Primary Nav Bar Goes Here set max width to 1440</nav>
+    <!-- Row: Welcome Banner Bar-->
+    <section class="bannerBarContainer"></section>
+    <!-- Row: Status Bar -->
+    <section class="statusBarContainer"><strong>Lockdown Status:</strong> Toronto is currently in <strong>Grey Lockdown Zone</strong>. Status to be reviewed on March 28,2020. <strong><a href="#">Dos & Don’ts</a></strong> for Lockdown</section>
+    <section class="covidZoneColours"><img src="images/OntarioZoneColours.png" alt="COVID=19 Zone Colours">
+    <br>Read More About Color Coded-Zones</section>
+    
+    <main>
+      <!-- spacer --><div class="mainSpacer"></div>
+      <!-- COVID-19 Stats -->
+    <div class="statsContainer">
+      <div class="statsContainersHeader"><H1>Today’s COVID-19 Statistics at a Glance</H1></div>
+      <div class="containerSpacer"></div>
+      <div class="body-statsContainer">
+        <div class="statsColumn1"><img src="images/CovidGraph.png" alt="COVID-19 Chart for Toronto"></div>
+        <div class="statsColumn2"><img src="images/Stats.png" alt="COVID-19 Stats for Toronto"></div>
       </div>
     </div>
-    <!-- Row: Primary Navigation Bar-->
-    <div class="primaryNavBarContainer"><a href="#">Home</a> <a href="#">News</a> <a href="#">Statistics</a>  <a href="#">Business Support</a>  <a href="#">Help Initiatives</a>  <a href="#">Protection</a>  <a href="#">Testing</a>  <a href="#">Vaccines</a>
+
+      <!-- spacer --><div class="mainSpacer"></div>
+      <!-- How Can We Help You? -->
+    <div class="helpContainer">
+      <div class="helpContainersHeader"><H1>How Can We Help You?</H1></div>
+      <div class="containerSpacer"></div>
+      <div class="body-helpContainer">
+        <div class="helpColumn1">
+            <!-- Help Card 1 -->
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="images/CTACard_Tested.png" alt="Can I Get Tested?">
+            <div class="card-body card-body-help">
+              <p class="card-text card-text-help">Can I Get Tested?</p>
+            </div>
+        </div></div>
+        <div class="helpColumn2"><!-- Help Card 2 -->
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="images/CTACard_Vaccinated.png" alt="Can I Get Vaccinated?">
+            <div class="card-body card-body-help">
+              <p class="card-text card-text-help">Can I Get Vaccinated?</p>
+            </div>
+        </div></div>
+        <div class="helpColumn3"><!-- Help Card 3 -->
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="images/CTACard_Symptoms.png" alt="Symptoms of COVID-19">
+            <div class="card-body card-body-help">
+              <p class="card-text card-text-help">Symptoms of COVID-19</p>
+            </div>
+        </div></div>
+        <div class="helpColumn4"><!-- Help Card 4 -->
+          <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="images/CTACard_DosDonts.png" alt="Dos & Don'ts">
+            <div class="card-body card-body-help">
+              <p class="card-text card-text-help">Dos & Don'ts</p>
+            </div>
+        </div></div>
+      </div>
     </div>
-    <!-- Row: Welcome Banner Bar-->
-    <div class="bannerBarContainer">Banner Bar </div>
-    <!-- Row: Status Bar -->
-    <div class="statusBarContainer">Status Bar Container</div>
-    <!-- Row: Main Grid -->
-    <!-- START mainGrid -->
-    <div class="mainGrid">MAIN GRID</div>
-    <!-- END: Main Grid -->
+    <!-- spacer --><div class="mainSpacer"></div>
+    <!-- Quick Links -->
+    <div class="quickContainer">
+      <div class="quickContainersHeader"><H1>Quick Links</H1></div>
+      <div class="containerSpacer"></div>
+      <div class="body-quickContainer">
+        <div><div class="card" style="width: 18rem;">
+          <!-- Quick Links Card 1-->
+          <div class="card-header card-header-quick"><h3>Economic Support</h3></div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item quickLinksTextBox">Recovery Initiatives</li>
+            <li class="list-group-item quickLinksTextBox">Income Support</li>
+            <li class="list-group-item quickLinksTextBox">Economic Assistance <br>for Business</li>
+          </ul>
+        </div></div>
+        <div ><div class="card" style="width: 18rem;">
+          <!-- Quick Links Card 2-->
+          <div class="card-header card-header-quick"><h3>Work & School</h3></div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item quickLinksTextBox">Latest Updates for Schools</li>
+            <li class="list-group-item quickLinksTextBox">Measures in Place</li>
+            <li class="list-group-item quickLinksTextBox">Report <br>Non-Compliance</li>
+          </ul>
+        </div></div>
+        <div><div class="card" style="width: 18rem;">
+          <!-- Quick Links Card 3-->
+          <div class="card-header card-header-quick"><h3>Travel Rules</h3></div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item quickLinksTextBox">Quarantine Rules</li>
+            <li class="list-group-item quickLinksTextBox">Know Before You Travel</li>
+            <li class="list-group-item quickLinksTextBox">Arriving at Pearson <br>International Airport</li>
+          </ul>
+        </div></div>
+      </div>
+      <!-- spacer --><div class="mainSpacer"></div>
+      <!-- Toronto COVID-19 Briefings -->
+      <div class="briefingContainer">
+        <div class="briefingContainersHeader"><H1>Headline Here</H1></div>
+        <div class="containerSpacer"></div>
+        <div class="body-briefingContainer">
+          <div><img src="images/Video_WithOverlay.png" alt="Toronto COVID-19 Briefing"></div>
+          <div><!-- Briefing Card -->
+            <div>
+              <!-- Briefing Card-->
+              <div class="card-header card-header-briefing"><h3>Highlights</h3></div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item briefingTextBox">City Not Ready for Red Zone</li>
+                <li class="list-group-item briefingTextBox">Would Support Changes to the Framework</li>
+                <li class="list-group-item briefingTextBox">Allow More "Outdoor-focused Activities"</li>
+                <li class="list-group-item briefingTextBox">Not Supporting Reopening Such as Red Zone</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      <!-- spacer --><div class="mainSpacer"></div>
+      <!-- Stop The Spread -->
+      <div class="stopSpreadContainer">
+        <div class="stopSpreadContainersHeader"><H1>Help Stop the Spread of COVID-19</H1></div>
+        <div class="containerSpacer"></div>
+        <div><img src="images/StopSpread_Full.png" alt="Help Stop the Spread of COVID-19"></div>
+      </div>
+       <!-- spacer --><div class="mainSpacer"></div>
+      <!-- Download COVID Alert App -->
+      <div class="body-alertContainer">
+          <div><h3>Download the COVID-19 Alert Mobile App to Protect Yourself and Your Community</h3>
+        <div class="containerSpacer"></div>
+        <p>Get a phone alert if you have been exposed to COVID-19 (coronavirus), and let others know if you test positive without sharing any personal information.</p>
+        <p>[button: Download App] <a href="">Learn How it Works --></a></p></div>
+        <div><img src="images/CovidAlert_Mockup.png" alt="COVID-19 Alert Mobile App"></div>
+      </div>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+  </main>
+  <footer>
     <!-- Row: Top Half Footer Bar-->
     <div class="topFooterContainer">Top Footer</div>
     <!-- Row: Bottom Half Footer Bar-->
     <div class="bottomFooterContainer">Bottom Footer</div>
-  </main>
+  </footer>
+ 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

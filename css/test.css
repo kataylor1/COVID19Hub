@@ -1,21 +1,77 @@
 
 
 
+<div class="helpCard">
+<img src="images/CTACard_Tested.png" alt="Can I Get Tested?" style="width:100%">
+<div class="helpCardContainer">Can I Get Tested?</div>
+
+
+
+  .helpCardContainer {
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--mainLogoBlue);
+    color: var(--mainLightText);
+  }
+
+
+
+
+
+<div class="mainContainer">
+<div class="mainContainersHeader"><H1>Headline Here</H1></div>
+<div class="body-mainContainer">
+  <div class="column1">column 1</div>
+  <div class="column2">column 2</div>
+</div>
+</div>
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .mainContainersHeader {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  .body-mainContainer {
+    display: flex;
+    width: 100%;
+    flex: 1;
+  }
+  
+  .column1 {
+    width: 50%;
+  }
+  
+  .column2 {
+    width: 50%;
+  }
 
 
 
 
 
 
+  
+  .search-container button:hover {
+    background: #ccc;
+  }
 
 
-
-
-
-
-
-
-
+  .mainGrid {
+    outline: solid 1px tomato; /* for testing */
+    background-color: yellow; /* for testing */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(12, 1);
+    gap: 20px;
+    /* grid-area: TBD; */
+}
 
 
 /* default style for entire page */
