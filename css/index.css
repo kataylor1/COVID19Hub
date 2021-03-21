@@ -77,8 +77,8 @@ h4 {
 .primaryNav {
     font-family: Lato, sans-serif; 
     font-size: 1.25rem; /* 20px */
-    padding: 1rem;
-    max-width: 1440px;
+    padding: 2rem 0 2rem 0;
+    max-width: 1240px;
 }
 
 .primaryNavOn {
@@ -197,7 +197,7 @@ a.footer:link {
 /* Header: Utility and Search Bar*/
 header {
     width: 90%;
-    max-width: 1440px;
+    max-width: 1240px;
 }
 .logoUtilityBarContainer {
     display: flex;
@@ -320,7 +320,7 @@ fg--search {
 nav {
     /* background-color: chartreuse; test colour */
     width: 90%;
-    max-width: 1440px;
+    max-width: 1240px;
     font-family: Lato, sans-serif; 
     font-size: 1.25rem; /* 20px */
     display: flex;
@@ -384,7 +384,7 @@ ul {
 .bannerBarContainer {
     width: 100%;
     height: 232px;
-    background-size: auto auto;
+    max-width: ;
     background-image: url("../images/homepage_banner_background.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -402,6 +402,7 @@ ul {
 
 .statusBarContainer {
     width: 100%;
+    max-width: 1440px;
     height: 4rem;
     line-height: 4rem;
     text-align: center;
@@ -424,7 +425,7 @@ ul {
 /* Main Body */
 main {
     width: 90%;
-    max-width: 1440px;
+    max-width: 1240px;
     display: flex;
     flex-flow:column;
     align-items: center;
@@ -448,27 +449,25 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    max-width: 1440px;
+    padding: 2rem 2rem 2rem 2rem;
   }
   
   .statsContainersHeader {
-    width: 100%;
     height: 50px;
     line-height: 50px;
   }
   
   .body-statsContainer {
     display: flex;
-    width: 100%;
     flex: 1;
   }
   
   .statsColumn1 {
-    width: 50%;
+    width: 45%;
   }
   
   .statsColumn2 {
-    width: 50%;
+    width: 45%;
   }
 
   /* Section: How Can We Help You? */
@@ -477,7 +476,6 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    max-width: 1440px;
   }
   
   .helpContainersHeader {
@@ -576,7 +574,6 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    max-width: 1440px;
   }
   
   .briefingContainersHeader {
