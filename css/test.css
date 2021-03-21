@@ -781,3 +781,12 @@ ul {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /* old utility nav */
+  div class="utilityNavSection"><a href="#" class="utilityNav">AA+</a><a href="#" class="utilityNav">FAQs</a><a href="#" class="utilityNav">Language</a><div class="spacer1"><!-- Spacer --><div class="spacer1">
+  <!-- Search Bar -->
+    <div>
+    <form class="search">
+      <input type="text" name="search" placeholder="Search..">
+    </form><!-- Spacer -->
+      <!-- QA: want to use submit button? <div class="spacer1"></div><input type="search" value="Search">--></div>

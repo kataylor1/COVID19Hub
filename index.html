@@ -22,7 +22,7 @@
     <link href="css/index.css" rel="stylesheet">
     <!-- Font Link: Open Sans-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-    <title>Toronto Covid Hub</title>
+    <title>Toronto COVID-19 Hub</title>
   </head>
   <body>
   <!-- 40px padding-top for Main in CSS -->
@@ -30,18 +30,15 @@
   <header class="logoUtilityBarContainer">
     <!-- Logo & Utility Bar-->
     <!-- Logo --><div><img src="images/logo.png" alt="Toronto Covid Hub"></div>
-    <!-- Container for Utility Nav & Search Bar--><div class="utilityNavSection"><a href="#" class="utilityNav">AA+</a><a href="#" class="utilityNav">FAQs</a><a href="#" class="utilityNav">Language</a><div class="spacer1"><!-- Spacer --><div class="spacer1"></div>
-    <!-- Search Bar -->
-    <div>
-    <form class="search">
-      <input type="text" name="search" placeholder="Search..">
-    </form><!-- Spacer -->
-      <!-- QA: want to use submit button? <div class="spacer1"></div><input type="search" value="Search">--></div>
+    <!-- Container for Utility Nav & Search Bar--><div class="utilityNavSection"><a href="#" class="utilityNav">AA+</a><a href="#" class="utilityNav">FAQs</a><a href="#" class="utilityNav">Language</a>
+      <div class="logoUtilityBarContainer">
+        <input type="text" class="input" placeholder="search"></div><div><button type="submit"><img src="images/magnifyingGlass.png"></button></div>
+    </div>
   </header>
     <!-- Row: Primary Navigation Bar-->
-    <nav>
-      <ul>
-        <li><a href="#home.html">Home</a></li>
+    <nav class="primaryNav"><div class="primaryNavOn">Home</div><div>News</div><div>Statistics</div><div>Business Support</div><div>Help Initiatives</div><div>Protection</div><div>Testing</div><div>Vaccines</div>
+      <!-- <ul>
+        <li><a href="#home.html" style="color:#185D8B; font-weight: 900; font-family: Lato,sans-serif;">Home</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">News</a>
           <div class="dropdown-content">
@@ -106,14 +103,15 @@
             <a href="#">Know Your Vaccines</a>
           </div>
         </li>
-      </ul>
+      </ul> -->
     </nav>
     <!-- Row: Welcome Banner Bar-->
-    <section class="bannerBarContainer"></section>
+    <section class="bannerBarContainer">
+      <div class="welcomeBanner"><h2>A Comprehensive COVID-19 Resource for Toronto</h2></div></section>
     <!-- Row: Status Bar -->
     <section class="statusBarContainer"><strong>Lockdown Status:</strong> Toronto is currently in <strong>Grey Lockdown Zone</strong>. Status to be reviewed on March 28,2020. <strong><a href="#">Dos & Don’ts</a></strong> for Lockdown</section>
-    <section class="covidZoneColours"><img src="images/OntarioZoneColours.png" alt="COVID=19 Zone Colours">
-    <br>Read More About Color Coded-Zones</section>
+    <section class="covidZoneColours"><img src="images/OntarioZoneColoursv2.png" alt="COVID=19 Zone Colours">
+    <div style="padding: 1rem 0 0 0;"><a href="#">Read More About Color Coded-Zones</a></div></section>
     
     <main>
       <!-- spacer --><div class="mainSpacer"></div>
@@ -138,28 +136,28 @@
           <div class="card" style="width: 15rem;">
             <img class="card-img-top" src="images/CTACard_Tested.png" alt="Can I Get Tested?">
             <div class="card-body card-body-help">
-              <p class="card-text card-text-help">Can I Get Tested?</p>
+              <p class="card-text card-text-help"><a href="#" class="help">Can I Get Tested?</a></p>
             </div>
         </div></div>
         <div class="helpColumn2"><!-- Help Card 2 -->
           <div class="card" style="width: 15rem;">
             <img class="card-img-top" src="images/CTACard_Vaccinated.png" alt="Can I Get Vaccinated?">
             <div class="card-body card-body-help">
-              <p class="card-text card-text-help">Can I Get Vaccinated?</p>
+              <p class="card-text card-text-help"><a href="#" class="help">Can I Get Vaccinated?</a></p>
             </div>
         </div></div>
         <div class="helpColumn3"><!-- Help Card 3 -->
           <div class="card" style="width: 15rem;">
             <img class="card-img-top" src="images/CTACard_Symptoms.png" alt="Symptoms of COVID-19">
             <div class="card-body card-body-help">
-              <p class="card-text card-text-help">Symptoms of COVID-19</p>
+              <p class="card-text card-text-help"><a href="#" class="help">Symptoms of COVID-19</a></p>
             </div>
         </div></div>
         <div class="helpColumn4"><!-- Help Card 4 -->
           <div class="card" style="width: 15rem;">
             <img class="card-img-top" src="images/CTACard_DosDonts.png" alt="Dos & Don'ts">
             <div class="card-body card-body-help">
-              <p class="card-text card-text-help">Dos & Don'ts</p>
+              <p class="card-text card-text-help"><a href="#" class="help">Dos & Don'ts</a></p>
             </div>
         </div></div>
       </div>
@@ -174,27 +172,27 @@
           <!-- Quick Links Card 1-->
           <div class="card-header card-header-quick"><h3>Economic Support</h3></div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item quickLinksTextBox">Recovery Initiatives</li>
-            <li class="list-group-item quickLinksTextBox">Income Support</li>
-            <li class="list-group-item quickLinksTextBox">Economic Assistance <br>for Business</li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Recovery Initiatives</a></li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Income Support</a></li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Economic Assistance <br>for Business</a></li>
           </ul>
         </div></div>
         <div ><div class="card" style="width: 18rem;">
           <!-- Quick Links Card 2-->
           <div class="card-header card-header-quick"><h3>Work & School</h3></div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item quickLinksTextBox">Latest Updates for Schools</li>
-            <li class="list-group-item quickLinksTextBox">Measures in Place</li>
-            <li class="list-group-item quickLinksTextBox">Report <br>Non-Compliance</li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Latest Updates for Schools</a></li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Measures in Place</a></li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Report <br>Non-Compliance</a></li>
           </ul>
         </div></div>
         <div><div class="card" style="width: 18rem;">
           <!-- Quick Links Card 3-->
           <div class="card-header card-header-quick"><h3>Travel Rules</h3></div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item quickLinksTextBox">Quarantine Rules</li>
-            <li class="list-group-item quickLinksTextBox">Know Before You Travel</li>
-            <li class="list-group-item quickLinksTextBox">Arriving at Pearson <br>International Airport</li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Quarantine Rules</a></li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Know Before You Travel</a></li>
+            <li class="list-group-item quickLinksTextBox"><a href="#" class="quick">Arriving at Pearson <br>International Airport</a></li>
           </ul>
         </div></div>
       </div>
@@ -251,9 +249,9 @@
         <br>Email COVID-19@Toronto.ca
       </div>
       <div class="lightFooter"><strong class="lightFooter">RELATED COVID-19 RESOURCES</strong>
-        <br><br>Ontario Ministry of Health
-        <br>Public Health Ontario
-        <br>Public Health Agency of Canada
+        <br><br><a href="#" class="footer" target=”_blank” rel=”noopener noreferrer”>Ontario Ministry of Health</a>
+        <br><a href="#" class="footer" target=”_blank” rel=”noopener noreferrer”>Public Health Ontario</a>
+        <br><a href="#" class="footer" target=”_blank” rel=”noopener noreferrer”>Public Health Agency of Canada</a>
       </div>
     </div>
     <!-- Row: Bottom Half Footer Bar-->

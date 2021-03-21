@@ -77,16 +77,122 @@ h4 {
 .primaryNav {
     font-family: Lato, sans-serif; 
     font-size: 1.25rem; /* 20px */
+    padding: 1rem;
+    max-width: 1440px;
 }
-.primaryNavHover {
-    font-family: Lato, sans-serif; 
-    font-size: 1.25rem; /* 20px */
-}
+
 .primaryNavOn {
     font-family: Lato, sans-serif; 
     font-size: 1.25rem; /* 20px */
     font-weight: bold;
+    color: var(--mainLogoBlue);
 }
+
+/* Regular Body Links */
+/* unvisited link */
+a:link {
+    color: var(--mainLogoBlue);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--mainLogoBlue);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--mainLogoBlue);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--mainLogoBlue);
+    text-decoration: underline;
+  }
+
+  /* Help Card Links: bold body font, white */
+/* unvisited link */
+a.help:link {
+    color: var(--mainBackground);
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  /* visited link */
+  a.help:visited {
+    color: var(--mainBackground);
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  /* mouse over link */
+  a.help:hover {
+    color: var(--mainBackground);
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a.help:active {
+    color: var(--mainBackground);
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+
+/* Quick Links Card Links: regular body font-size, color = white */
+/* unvisited link */
+a.quick:link {
+    color: var(--mainBackground);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a.quick:visited {
+    color: var(--mainBackground);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a.quick:hover {
+    color: var(--mainBackground);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a.quick:active {
+    color: var(--mainBackground);
+    text-decoration: underline;
+  }
+
+
+/* Footer Links: regular body font-size, color = white */
+/* unvisited link */
+a.footer:link {
+    color: var(--mainBackground);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a.footer:visited {
+    color: var(--mainBackground);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a.footer:hover {
+    color: var(--mainBackground);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a.footer:active {
+    color: var(--mainBackground);
+    text-decoration: underline;
+  }
 
 /* Header: Utility and Search Bar*/
 header {
@@ -160,7 +266,37 @@ a.utilityNav:active {
     padding: 1rem 1rem 1rem 1rem;
 }
 
-input[type=text] {
+/* for search bar */
+fg--search {
+    background: var(--mainBackground);
+    position: relative;
+    width: 5rem;
+  }
+  
+  .fg--search input {
+    width: 100%;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .fg--search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 2;
+  }
+  
+  .fg--search input:focus + button .fa-search {
+    color: red;
+  }
+
+/* input[type=text] {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid var(--submitGrey);
@@ -178,7 +314,7 @@ input[type=text] {
     color: var(--mainLightText);
     text-decoration: none;
     cursor: pointer;
-  }
+  } */
 
 /* Primary Navigation */
 nav {
@@ -190,7 +326,7 @@ nav {
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 ul {
@@ -247,12 +383,21 @@ ul {
 
 .bannerBarContainer {
     width: 100%;
-    height: 248px;
+    height: 232px;
+    background-size: auto auto;
     background-image: url("../images/homepage_banner_background.png");
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 0rem 0rem 0rem 0rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-color: darkgreen; test colour */
+}
+
+.welcomeBanner {
+    color: var(--mainBackground);
 }
 
 .statusBarContainer {
@@ -265,6 +410,16 @@ ul {
     margin: 0rem 0rem 0rem 0rem;
     /* background-color: goldenrod; test colour */
 }
+
+.covidZoneColours {
+    padding:0;
+    margin: auto auto;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 
 /* Main Body */
 main {
@@ -462,6 +617,26 @@ main {
     border: solid 1px var(--mainLightText);
 }
 /* Stop the Spread */
+.stopSpreadContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+    /* background-color: aquamarine; test colour */
+}
+
+.stopSpreadContainersHeader {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.stopSpreadBody {
+    display:flex;
+    justify-content: center;
+    align-items:
+}
 
 /* Alert App */
 .alertContainer {
