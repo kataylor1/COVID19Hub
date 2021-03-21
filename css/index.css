@@ -426,11 +426,13 @@ main {
   .body-alertContainer {
     display: flex;
     width: 100%;
+    background-color: var(--mainLightBgColour);
   }
   
 
 .topFooterContainer {
     width: 100%;
+    min-width: 1440px;
     background-color: purple; /* test colour */
     display: flex;
     flex-flow: column;
