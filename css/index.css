@@ -17,6 +17,7 @@
     --mainLightBgColour: #CCD8E3;
     --covidZoneColour: #CECECE;
     --submitGrey:#AEAEAE;
+    --darkFooter: #222527;
 }
 
 * {
@@ -24,8 +25,8 @@
     font-family: Open Sans, Lato, Roboto, sans-serif; 
     background-color: var(--mainBackgroud);
     font-size: 1.063rem; /* 17px */
-    /* color: var(--mainFontColor);  */
-    color: #cc0000;
+    color: var(--mainFontColor);  
+    /* color: #cc0000; testing colour */
     padding: 0;
     margin: 0;
 }
@@ -36,8 +37,8 @@ body {
     display: flex;
     flex-flow:column;
     align-items: center;
-    background-color: coral; /* for testing */
-    outline: solid 1px blue; /* for testing */
+    /* background-color: coral; for testing */
+    /* outline: solid 1px blue; for testing */
     padding-top: 40px;
 }
 
@@ -181,10 +182,10 @@ input[type=text] {
   }
 
 /* Primary Navigation */
-.primaryNavBarContainer {
-    width: 100%;
-    background-color: chartreuse; /* test colour */
+nav {
+    /* background-color: chartreuse; test colour */
     width: 90%;
+    max-width: 1440px;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -219,14 +220,14 @@ main {
     display: flex;
     flex-flow:column;
     align-items: center;
-    background-color: pink; /* for testing */
-    outline: solid 1px blue; /* for testing */
+    /* background-color: pink; for testing */
+    /* outline: solid 1px blue;  for testing */
 }
 
 .mainSpacer {
     width: 100%;
     height: 4rem;
-    background-color: tan; /* for testing */
+    /* background-color: tan;  for testing */
 }
 
 .containerSpacer {
@@ -329,7 +330,7 @@ main {
     justify-content: space-between;
     width: 100%;
     flex: 1;
-    background-color: crimson;
+    /* background-color: crimson; test colour */
   }
   
 .quick {
@@ -381,7 +382,7 @@ main {
     justify-content: space-between;
     width: 100%;
     flex: 1;
-    background-color: aquamarine;
+    /* background-color: aquamarine; test colour */
   }
 
   /* Briefing Card */
@@ -427,22 +428,32 @@ main {
     display: flex;
     width: 100%;
     background-color: var(--mainLightBgColour);
+    padding: 3rem 3rem 3rem 3rem;
   }
   
-
 .topFooterContainer {
     width: 100%;
     min-width: 1440px;
-    background-color: purple; /* test colour */
+    background-color: var(--mainLogoBlue);
+    color: var(--mainLightText);
+    padding: 3rem 3rem 3rem 3rem;
+    /* background-color: purple; test colour */
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.lightFooter {
+    color: var(--mainLightText);
 }
 
 .bottomFooterContainer {
     width: 100%;
-    background-color: khaki; /* test colour */
+    /* background-color: khaki; test colour */
     display: flex;
     flex-flow: column;
     align-items: center;
+    background-color: var(--darkFooter);
 }
