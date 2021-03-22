@@ -326,8 +326,8 @@ a.utilityNav:active {
 
   input[type=text] {
     background-color:var(--mainBackground);
-    background-image: url('../images/magnifyingGlass.png');
-    background-position: 10px 10px;
+    background-image: url('../images/magnifyingGlassv3.png');
+    background-position: 5px 5px;
     background-repeat: no-repeat;
     padding-left: 40px;
   }
@@ -465,8 +465,7 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    max-width: 1240;
-    padding: 2rem 2rem 2rem 2rem;
+    max-width: 1240px;
   }
   
   .statsContainersHeader {
