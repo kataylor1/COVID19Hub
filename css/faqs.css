@@ -1,0 +1,65 @@
+
+.bannerBarContainer {
+    width: 100%;
+    height: 232px;
+    max-width: ;
+    background-image: url("../images/FAQ_Banner_Background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkgreen; test colour */
+}
+
+.welcomeBanner {
+    color: var(--mainBackground);
+}
+
+.breadcrumbContainer {
+    display: flex;
+    width: 90%;
+    max-width: 1240px;
+    padding: 0 0 2rem 0;
+    /* background-color: coral; test colour */
+}
+
+.breadcrumbs {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.25rem; /* 20px */
+    columns: var(--mainFontColor);
+}
+
+/* Breadcrumb Links */
+/* unvisited link */
+a.breadcrumbs {
+    color: var(--mainLogoBlue);
+    text-decoration: underline;
+    font-weight: 900;
+  }
+  
+  /* visited link */
+  a.breadcrumbs:visited {
+    color: var(--mainLogoBlue);
+  }
+  
+  /* mouse over link */
+  a.breadcrumbs:hover {
+    color: var(--mainFontColor);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a.breadcrumbs:active {
+    color: var(--mainLogoBlue);
+    text-decoration: underline;
+  }
+
+  .introContainer {
+    display: flex;
+    width: 90%;
+    max-width: 1240px;
+    /* background-color: coral; test colour */
+}
