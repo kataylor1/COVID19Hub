@@ -63,3 +63,22 @@ a.breadcrumbs {
     max-width: 1240px;
     /* background-color: coral; test colour */
 }
+
+input.Faq[type=text] {
+    width: 820px;
+    box-sizing: border-box;
+    border: 2px solid var(--mainFontColor);
+    border-radius: 4px;
+    font-size: 1.063rem; /* 17px */
+    background-color: white;
+    background-image: url('../images/searchIcon.png');
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 50px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* input.Faq[type=text]:focus {
+    width: 100%;
+  } */
