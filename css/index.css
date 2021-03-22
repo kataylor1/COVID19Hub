@@ -170,27 +170,55 @@ a.quick:link {
 
 
 /* Footer Links: regular body font-size, color = white */
+/* Blue/Top Footer links - no decoration until hover */
 /* unvisited link */
 a.footer:link {
-    color: var(--mainBackground);
+    color: var(--mainLightText);
     text-decoration: none;
   }
   
   /* visited link */
   a.footer:visited {
-    color: var(--mainBackground);
+    color: var(--mainLightText);
     text-decoration: none;
   }
   
   /* mouse over link */
   a.footer:hover {
-    color: var(--mainBackground);
+    color: var(--mainLightText);
     text-decoration: underline;
   }
   
   /* selected link */
   a.footer:active {
-    color: var(--mainBackground);
+    color: var(--mainLightText);
+    text-decoration: underline;
+  }
+
+/* Black/Bottom Footer links - decoration */
+/* unvisited link */
+a.footer2:link {
+    color: var(--mainLightText);
+    text-decoration: underline;
+    padding: 1rem;
+    line-height: 2rem;
+  }
+  
+  /* visited link */
+  a.footer2:visited {
+    color: var(--mainLightText);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a.footer2:hover {
+    color: var(--mainLightText);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a.footer2:active {
+    color: var(--mainLightText);
     text-decoration: underline;
   }
 
@@ -464,6 +492,8 @@ main {
   
   .statsColumn1 {
     width: 45%;
+    font-size: .875rem;
+    color: var(--submitGrey);
   }
   
   .statsColumn2 {
@@ -659,13 +689,14 @@ main {
 .topFooterContainer {
     width: 100%;
     min-width: 1440px;
+    height: 15rem;
     background-color: var(--mainLogoBlue);
     color: var(--mainLightText);
     padding: 3rem 3rem 3rem 3rem;
     /* background-color: purple; test colour */
     display: flex;
     flex-flow: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     flex: 1;
 }
@@ -681,4 +712,13 @@ main {
     flex-flow: column;
     align-items: center;
     background-color: var(--darkFooter);
+}
+
+.footer2Body {
+    color: var(--mainLightText);
+}
+
+h3.footer {
+    color: var(--mainLightText);
+    line-height: 2rem;
 }
