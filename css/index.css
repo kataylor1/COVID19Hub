@@ -477,6 +477,7 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    max-width: 1240;
     padding: 2rem 2rem 2rem 2rem;
   }
   
@@ -491,13 +492,14 @@ main {
   }
   
   .statsColumn1 {
-    width: 45%;
-    font-size: .875rem;
+    width: 50%;
+    font-size: .8rem;
     color: var(--submitGrey);
+    padding: 0 2rem 0 0;
   }
   
   .statsColumn2 {
-    width: 45%;
+    width: 50%;
   }
 
   /* Section: How Can We Help You? */
