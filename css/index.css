@@ -42,9 +42,9 @@ body {
 }
 
 img{
+    /* prevents images from stretching */
     max-width: 100%;
     max-height: 100%;
-    /* prevents images from stretching */
 }
 
 /* Fonts */
@@ -331,26 +331,6 @@ a.utilityNav:active {
     background-repeat: no-repeat;
     padding-left: 40px;
   }
-
-/* input[type=text] {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid var(--submitGrey);
-    border-radius: 5px;
-    background-color: var(--mainBackground);
-    background-image: url('../images/magnifyingGlass.png') no-repeat 100%;
-    background-size: 1.125rem;
-  }
-
-  input[type=search]{
-    max-width: 5rem;
-    text-align: center;
-    background-color: var(--submitGrey);
-    border: none;
-    color: var(--mainLightText);
-    text-decoration: none;
-    cursor: pointer;
-  } */ 
 
 /* Primary Navigation */
 nav {
@@ -732,3 +712,32 @@ h3.footer {
     color: var(--mainLightText);
     line-height: 2rem;
 }
+
+/* for Newsletter Sign-up */
+.containerNewsletter {
+    padding: 20px;
+  }
+  
+  input.Newsletter[type=text], input.Newsletter[type=submit] {
+    width: 15rem;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--mainLogoBlue);
+    box-sizing: border-box;
+    background-image: none;
+  }
+  
+  input.Newsletter[type=submit] {
+    background-color:var(--mainBackground);
+    color: var(--mainLogoBlue);
+    border: 1px;
+    border-color: var(--mainLogoBlue);
+    width: 6rem;
+  }
+  
+  input.Newsletter[type=submit]:hover {
+    /* opacity: 0.8; */
+    background-color:var(--mainLightBgColour); 
+    /* background-color: #cc0000; test colour */
+  }

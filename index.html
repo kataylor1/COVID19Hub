@@ -16,16 +16,16 @@
     </script>
     <!-- HotJar -->
     <!-- Hotjar Tracking Code for https://kataylor1.github.io/covid19hub/ -->
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2308953,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2308953,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <!-- Javascript -->
@@ -41,7 +41,7 @@
   <!-- IMG set to max-width 100% max-heigh 100% -->
   <header class="logoUtilityBarContainer">
     <!-- Logo & Utility Bar-->
-    <!-- Logo --><div><img src="images/logo.png" alt="Toronto Covid Hub"></div>
+    <!-- Logo --><div><img src="images/logo.png" alt="Toronto Covid Hub" width="100%" height="auto"></div>
     <!-- Container for Utility Nav & Search Bar--><div class="utilityNavSection"><a href="#" class="utilityNav">AA+</a><a href="#" class="utilityNav">FAQs</a><a href="#" class="utilityNav">Language</a>
       <div class="logoUtilityBarContainer">
         <input type="text" class="input" placeholder="Search"></div><!-- <div><button type="submit"><img src="images/magnifyingGlass.png"></button></div> -->
@@ -255,9 +255,12 @@
     <!-- Row: Top Half Footer Bar-->
     <div class="topFooterContainer">
       <div class="lightFooter"><strong class="lightFooter">COVID-19 UPDATES</strong>
-        <br><br>Get email updates about COVID-19.
-        <br>[input box] [submit button]
-      </div>
+        <!-- Newsletter Signup Form-->
+        <form class="lightFooter" action="/action_page.php">
+          Get email updates about COVID-19.
+          <br><br>
+          <input class="Newsletter" type="text" placeholder="Email address" name="mail" required> <input  class="Newsletter" type="submit" value="Subscribe">
+        </form></div>
       <div class="lightFooter"><strong class="lightFooter">CONTACT INFORMATION</strong>
         <br><br>Call 1.888.555.1212
         <br>Twitter @CityofToronto
@@ -274,7 +277,9 @@
       <div class="containerSpacer"></div>
       <p><a href="#" class="footer2">About</a> <a href="#" class="footer2">Careers</a> <a href="#" class="footer2">Contact</a> <a href="#" class="footer2">Privacy Policy</a> <a href="#" class="footer2">Site Map</a> <a href="#" class="footer2">Volunteer</a></p>
      <H3 class="footer">Follow Us:</H3>
-     <div><a href="#"><img src="images/Instagram.png" alt="Instagram"></a> <a href="#"></a><img src="images/Twitter.png" alt="Twitter"></a> <a href="#"><img src="images/Linkedin.png" alt="LinkedIn"></a> <a href="#"><img src="images/Facebook.png" alt="facebook"></a></div>
+     <div>
+       <!-- Footer Icons w Rollover -->
+      <!-- Instagram --><a href="#"><img src="images/Instagram.png" onmouseover="this.src='images/InstagramHover.png'" onmouseout="this.src='images/Instagram.png'" alt="Instagram"></a><!-- Twitter --><a href="#"><img src="images/Twitter.png" onmouseover="this.src='images/TwitterHover.png'" onmouseout="this.src='images/Twitter.png'" alt="Twitter"></a><!-- LinkedIn --><a href="#"><img src="images/Linkedin.png" onmouseover="this.src='images/LinkedinHover.png'" onmouseout="this.src='images/Linkedin.png'" alt="LinkedIn"></a><!-- facebook --><a href="#"><img src="images/Facebook.png" onmouseover="this.src='images/FacebookHover.png'" onmouseout="this.src='images/Facebook.png'" alt="facebook"></a></div>
      <div class="containerSpacer"></div>
       <p class="footer2Body">Copyright 	&#169; 2021 Toronto Covid Information Hub. All rights reserved.</p></div>
   </footer>
