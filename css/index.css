@@ -3,7 +3,7 @@
 - Fonts
 - Header: Utility and Search Bar
 - Nav: Primary Navigation
-- Main
+- Main .....
  */
 
 /* Root & All Elements & Body & Img */
@@ -295,7 +295,7 @@ a.utilityNav:active {
 }
 
 /* for search bar */
-fg--search {
+/* fg--search {
     background: var(--mainBackground);
     position: relative;
     width: 5rem;
@@ -322,6 +322,14 @@ fg--search {
   
   .fg--search input:focus + button .fa-search {
     color: red;
+  } */
+
+  input[type=text] {
+    background-color:var(--mainBackground);
+    background-image: url('../images/magnifyingGlass.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
   }
 
 /* input[type=text] {
@@ -342,7 +350,7 @@ fg--search {
     color: var(--mainLightText);
     text-decoration: none;
     cursor: pointer;
-  } */
+  } */ 
 
 /* Primary Navigation */
 nav {
