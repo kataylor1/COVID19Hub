@@ -92,7 +92,7 @@ h4 {
 /* unvisited link */
 a:link {
     color: var(--mainLogoBlue);
-    text-decoration: none;
+    text-decoration: underline;
   }
   
   /* visited link */
@@ -103,7 +103,7 @@ a:link {
   
   /* mouse over link */
   a:hover {
-    color: var(--mainLogoBlue);
+    color: var(--mainFontColor);
     text-decoration: underline;
   }
   
