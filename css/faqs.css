@@ -82,3 +82,25 @@ input.Faq[type=text] {
   /* input.Faq[type=text]:focus {
     width: 100%;
   } */
+
+  .faqsCard {
+      background-color: var(--mainLogoBlue);
+      /* background-color: coral; test colour */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2rem;
+      border: none:
+      color:var(--mainBackground);
+      font-size: 1.063rem; /* 17px */
+      font-weight: 600;
+      width: 12rem;
+      height: 8rem;
+      text-align: center;
+  }
+
+  .faqsCardText {
+    display: flex;
+    justify-content: center;
+    color:var(--mainBackground);
+  } 

@@ -593,6 +593,7 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    /* border: 1px solid #cc0000; */
   }
   
   .briefingContainersHeader {
@@ -606,6 +607,7 @@ main {
     justify-content: space-between;
     width: 100%;
     flex: 1;
+    /* border: 1px solid blue; */
     /* background-color: aquamarine; test colour */
   }
 
