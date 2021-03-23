@@ -593,7 +593,6 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    /* border: 1px solid #cc0000; */
   }
   
   .briefingContainersHeader {
@@ -607,8 +606,9 @@ main {
     justify-content: space-between;
     width: 100%;
     flex: 1;
-    /* border: 1px solid blue; */
+    border: 2px solid red;
     /* background-color: aquamarine; test colour */
+    padding: 1px;
   }
 
   /* Briefing Card */
@@ -617,14 +617,23 @@ main {
     text-align: center;
     background-color: var(--mainLogoBlue);
     color: var(--mainLightText);
-    width: 100%;
-    min-width: 40rem;
-    min-height: 4rem;
+    width: 60rem;
+    /* min-width: 40rem; */
+    /* min-height: 4rem; */
     border-radius: 0.25em;
     border: solid 1px var(--mainLightText);
+    
+    border: 2px solid green;
+}
+
+
+
+.briefingImg {
+  width: 850px;
 }
 
 .briefingTextBox {
+  border: 2px solid purple;
     padding: .3rem .3rem .3rem .3rem;
     min-width: 30rem;
     background-color: var(--mainLightBgColour);
@@ -634,12 +643,6 @@ main {
     border-radius: 0.25em;
     border: solid 1px var(--mainLightText);
 }
-
-.briefingImg {
-    width: 850px;
-  }
-
-
 /* Stop the Spread */
 .stopSpreadContainer {
     display: flex;
