@@ -138,3 +138,11 @@ a.faqs:link {
     color: var(--mainLightText);
     text-decoration: underline;
   }
+
+  .alertBanner {
+    background-color: #ED9E0A;
+    text-align:center;
+    padding: 10px;
+    width: 90%;
+    max-width: 1440px;
+  }
