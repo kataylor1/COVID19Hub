@@ -83,6 +83,14 @@ input.Faq[type=text] {
     width: 100%;
   } */
 
+.faqsCardContainer {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3rem;
+}
+
   .faqsCard {
       background-color: var(--mainLogoBlue);
       /* background-color: coral; test colour */
@@ -97,10 +105,36 @@ input.Faq[type=text] {
       width: 12rem;
       height: 8rem;
       text-align: center;
+      padding: 1rem;
   }
 
   .faqsCardText {
     display: flex;
     justify-content: center;
-    color:var(--mainBackground);
-  } 
+    flex-direction: row;
+  }
+
+ /* links for faqs cards - no decoration until hover*/
+/* unvisited link */
+a.faqs:link {
+    color: var(--mainLightText);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a.faqs:visited {
+    color: var(--mainLightText);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a.faqs:hover {
+    color: var(--mainLightText);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a.faqs:active {
+    color: var(--mainLightText);
+    text-decoration: underline;
+  }
