@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+  font-family: Open Sans, Lato, Roboto, sans-serif; 
+  background-color: var(--mainBackgroud);
+  font-size: 1.063rem; /* 17px */
+  color: var(--mainFontColor);  
+  /* color: #cc0000; testing colour */
+  padding: 0;
+  margin: 0;
+}
 
 .bannerBarContainer {
     width: 100%;
@@ -140,9 +150,17 @@ a.faqs:link {
   }
 
   .alertBanner {
-    background-color: #ED9E0A;
+    background-color: var(--submitGrey);
     text-align:center;
-    padding: 10px;
+    padding: 1rem;
     width: 90%;
     max-width: 1440px;
+    margin: 0px;
   }
+
+
+.miniSpacer {
+  width: 100%;
+  height: 2rem;
+  /* background-color: tan;  for testing */
+}
