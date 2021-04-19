@@ -49,8 +49,9 @@ img{
 
 /* Fonts */
 h1 {
-    font-size: 2.5rem; /* 40px */
+  font-size: 1.875rem; /* 30px */
     font-weight: bold;
+    /* color:aquamarine; */
 }
 h2 {
     font-size: 1.875rem; /* 30px */
@@ -358,12 +359,12 @@ main {
 
 .mainSpacer {
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     /* background-color: tan;  for testing */
 }
 
 .containerSpacer {
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 /* Section: COVID-19 Stats */
@@ -473,7 +474,7 @@ main {
 }
 
 .card-header-quick {
-    padding: .3rem .3rem .3rem .3rem;
+    padding: 1rem 1rem 1rem 1rem;
     text-align: center;
     background-color: var(--mainLogoBlue);
     color: var(--mainLightText);
@@ -484,7 +485,7 @@ main {
 }
 
 .quickLinksTextBox {
-    padding: .3rem .3rem .3rem .3rem;
+    padding: .5rem .5rem .5rem .5rem;
     text-align: center;
     background-color: var(--mainLogoBlue);
     color: var(--mainLightText);
